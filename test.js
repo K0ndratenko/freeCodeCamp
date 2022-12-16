@@ -29,7 +29,7 @@
 
 // function func(int,int1) {
 //    return int + int1;
-   
+
 // }
 
 
@@ -82,3 +82,52 @@
 // console.log(a());
 
 
+// date 14.12 2022********************************************************************************************************************************
+
+// let catName = "Oliver";
+// let catSound = "Meow!";
+
+
+// console.log(11 % 3);
+
+
+
+
+// var humanYearsCatYearsDogYears = function(humanYears) {
+//   // Your code here!
+//   let dogYear = 15;
+//   let catYear = 15;
+//   if(humanYears == 2){
+//     dogYear +=9;
+//     catYear+=9;
+//   }else if(humanYears >2){
+//    let caunt = 3;
+//    dogYear +=9;
+//    catYear+=9;
+//    while(humanYears >= caunt){
+//       caunt ++;
+//       dogYear +=5;
+//       catYear +=4;
+//    }
+//   }
+
+//  console.log(humanYears,catYear,dogYea)
+// }
+
+// humanYearsCatYearsDogYears(10);
+
+
+// const myName = {
+//    MY_NAME: 'Kostia',
+
+// }
+
+
+// myName.MY_NAME = 1;
+// console.log(myName)
+
+
+// Налаштування
+const myArray = [["John", 23], ["dog", 3]];
+const removedFromMyArray = myArray.shift()
+// Змініть код лише під цим рядком
