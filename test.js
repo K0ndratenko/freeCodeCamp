@@ -128,6 +128,22 @@
 
 
 // Налаштування
-const myArray = [["John", 23], ["dog", 3]];
-const removedFromMyArray = myArray.shift()
+// const myArray = [["John", 23], ["dog", 3]];
+// const removedFromMyArray = myArray.shift()
 // Змініть код лише під цим рядком
+
+function filter_list(l) {
+   const listResult = []
+   for (let i = 0;i<=l.length-1;i++){
+      console.log('value' + typeof(typeof(l[i])))
+     if(typeof(l[i]) !== 'string'){
+         listResult.push(l[i])
+     }
+   }
+   return listResult
+ }
+
+
+
+
+ console.log(filter_list([1,2,'aasf','1','123',123]))
