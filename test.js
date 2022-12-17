@@ -185,31 +185,51 @@
 //  let myArr = new Array();
  
 
-function isIsogram(str){
-  let check = false;
-  let count = 0;
-  const arr = []
-  for (let i =0 ;i< str.length;i++){
-    arr.push(str[i])
-  }
+// function isIsogram(str){
+//   let check = false;
+//   let count = 0;
+//   const arr = []
+//   for (let i =0 ;i< str.length;i++){
+//     arr.push(str[i])
+//   }
   
-  for(let i = 0;i< str.length;i++){
-    for(let j =0 ; j < str.length;j++){
-      if(str[i] === arr[j] && check === false){
-          check = true    
-      } else if (str[i] === arr[j] && check === true){
-          throw new Error('В слове есть одинаковая буква')
-      }
+//   for(let i = 0;i< str.length;i++){
+//     for(let j =0 ; j < str.length;j++){
+//       if(str[i] === arr[j] && check === false){
+//           check = true    
+//       } else if (str[i] === arr[j] && check === true){
+//           throw new Error('В слове есть одинаковая буква')
+//       }
 
 
-  }
+//   }
  
 
+//   }
+// }
+// isIsogram('')
+//while( count < myArr.length )
+
+function removeExclamationMarks(s) {
+  const myArr = []
+  
+  for(let i =0 ;i< s.length;i++){
+    myArr[i] = s[i]
   }
+ 
+  let count = 0;
+  for(let i =0 ;i< s.length;i++){
+      if(myArr[count] === '!' ){
+          myArr.splice(count,1)
+      }
+    
+    count++;
+  }
+
+  return myArr.join('', ' ');
 }
-isIsogram('')
+
+  console.log(removeExclamationMarks('Hello world!'))
 
 
-  
-  
 
