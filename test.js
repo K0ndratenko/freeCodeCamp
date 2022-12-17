@@ -132,18 +132,84 @@
 // const removedFromMyArray = myArray.shift()
 // Змініть код лише під цим рядком
 
-function filter_list(l) {
-   const listResult = []
-   for (let i = 0;i<=l.length-1;i++){
-      console.log('value' + typeof(typeof(l[i])))
-     if(typeof(l[i]) !== 'string'){
-         listResult.push(l[i])
-     }
-   }
-   return listResult
- }
+// function filter_list(l) {
+//    const listResult = []
+//    for (let i = 0;i<=l.length-1;i++){
+//       console.log('value' + typeof(typeof(l[i])))
+//      if(typeof(l[i]) !== 'string'){
+//          listResult.push(l[i])
+//      }
+//    }
+//    return listResult
+//  }
 
 
 
 
- console.log(filter_list([1,2,'aasf','1','123',123]))
+//  console.log(filter_list([1,2,'aasf','1','123',123]))
+
+
+// const reusableFunction = () => {
+//   console.log('Hi World');
+// }
+// reusableFunction();
+
+
+
+// const reusableFunction = () => {
+//  let oppsGlobal = 100000;
+// }
+// console.log(oppsGlobal)
+
+
+// Налаштування
+// const outerWear = "T-Shirt";
+
+// function myOutfit() {
+//   // Змініть код лише під цим рядком
+// const outerWear = 'sweater';
+//   // Змініть код лише над цим рядком
+//   return outerWear;
+// }
+
+// console.log(myOutfit())
+
+
+
+// function f (num) { 
+//   let n = Math.pow(num,2);
+//   return n
+//  }
+//  console.log(f(3))
+
+//  let myArr = new Array();
+ 
+
+function isIsogram(str){
+  let check = false;
+  let count = 0;
+  const arr = []
+  for (let i =0 ;i< str.length;i++){
+    arr.push(str[i])
+  }
+  
+  for(let i = 0;i< str.length;i++){
+    for(let j =0 ; j < str.length;j++){
+      if(str[i] === arr[j] && check === false){
+          check = true    
+      } else if (str[i] === arr[j] && check === true){
+          throw new Error('В слове есть одинаковая буква')
+      }
+
+
+  }
+ 
+
+  }
+}
+isIsogram('')
+
+
+  
+  
+
