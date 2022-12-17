@@ -210,26 +210,61 @@
 // isIsogram('')
 //while( count < myArr.length )
 
-function removeExclamationMarks(s) {
-  const myArr = []
+// function removeExclamationMarks(s) {
+//   const myArr = []
   
-  for(let i =0 ;i< s.length;i++){
-    myArr[i] = s[i]
-  }
+//   for(let i =0 ;i< s.length;i++){
+//     myArr[i] = s[i]
+//   }
  
-  let count = 0;
-  for(let i =0 ;i< s.length;i++){
-      if(myArr[count] === '!' ){
-          myArr.splice(count,1)
-      }
+//   let count = 0;
+//   for(let i =0 ;i< s.length;i++){
+//       if(myArr[count] === '!' ){
+//           myArr.splice(count,1)
+//       }
     
-    count++;
-  }
+//     count++;
+//   }
 
-  return myArr.join('', ' ');
+//   return myArr.join('', ' ');
+// }
+
+//   console.log(removeExclamationMarks('Hello world!'))
+
+
+// let georgy = {
+//   name: 'Georgy',
+//   age: 23
+// }
+
+// let {name,age} = georgy
+
+// georgy = 5;
+
+// console.log(name,age)
+// console.log(georgy)
+
+
+
+
+
+const Student = {
+  name: 'Maksim',
+  age: 50,
 }
 
-  console.log(removeExclamationMarks('Hello world!'))
 
+function myfun ({aaa,bbb}){
+      if(aaa>30){
+        aaa += 100500;
+        console.log(`Возраст больше 30`)
+        console.log(`age = ${aaa}`)
+        return
+      }
+      console.log(`aaa eto > ${aaa}`)
+        console.log(`возвраст меньше 30 `)
+      
+}
 
-
+myfun(Student)
+console.log(Student.age)
