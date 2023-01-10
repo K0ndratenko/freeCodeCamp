@@ -575,3 +575,24 @@
 
 
 
+
+
+
+
+
+Date.prototype.getDate = function getGrinchDate() {
+  let  arrDate=  this.toString().split(" ")
+console.log(arrDate)
+    if(arrDate[1] == "Dec" && arrDate[2] == '25'){
+      return 26
+    }else {
+      return Number(arrDate[2])+1
+    }      
+
+  
+}
+
+
+const d = new Date('1957-12-25');
+console.log(d.getDate())
+// console.log(d.getMonth())
