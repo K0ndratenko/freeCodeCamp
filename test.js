@@ -647,54 +647,54 @@
 //           this.age = age;
 //           this.health = health;
 //           this.weight = weight;
-//           this.color = color;
-//         }
+// //           this.color = color;
+// //         }
+// //   }
+// // }
+// // //"name":250.86272431983824,"species":51.38450741281986
+// // let t = makeClass()
+// // console.log(t)
+// //  let t2 = new t(250.86272431983824,51.38450741281986)
+// //  console.log(t2)
+
+
+
+//  function makeClass(...properties) {
+//   return class {
+//     constructor(...props) {
+//       properties.forEach((prop, index) => {
+//         this[prop] = props[index]
+//       })
+//     }
 //   }
 // }
-// //"name":250.86272431983824,"species":51.38450741281986
-// let t = makeClass()
-// console.log(t)
-//  let t2 = new t(250.86272431983824,51.38450741281986)
-//  console.log(t2)
 
+// const Animal = makeClass("name","species","age","health","weight","color") 
+// console.log(new Animal('Bob','Dog','5','good','50lb','brown'))
 
+// class Shark extends Animal {
+//   constructor(name, age, status, legs = 0, species = "shark") {
+//     super(name, age, legs, species, status);
+//   }
+// }
 
- function makeClass(...properties) {
-  return class {
-    constructor(...props) {
-      properties.forEach((prop, index) => {
-        this[prop] = props[index]
-      })
-    }
-  }
-}
-
-const Animal = makeClass("name","species","age","health","weight","color") 
-console.log(new Animal('Bob','Dog','5','good','50lb','brown'))
-
-class Shark extends Animal {
-  constructor(name, age, status, legs = 0, species = "shark") {
-    super(name, age, legs, species, status);
-  }
-}
-
-class Cat extends Animal {
-  constructor(name, age, status, legs = 4, species = "cat") {
-    super(name, age, legs, species, status);
-  }
+// class Cat extends Animal {
+//   constructor(name, age, status, legs = 4, species = "cat") {
+//     super(name, age, legs, species, status);
+//   }
   
-  introduce() {
-    return super.introduce() + '  Meow meow!';
-  }
-}
+//   introduce() {
+//     return super.introduce() + '  Meow meow!';
+//   }
+// }
 
-class Dog extends Animal {
-  constructor(name, age, status, master, legs = 4, species = "dog") {
-    super(name, age, legs, species, status);
-    this.master = master;
-  }
+// class Dog extends Animal {
+//   constructor(name, age, status, master, legs = 4, species = "dog") {
+//     super(name, age, legs, species, status);
+//     this.master = master;
+//   }
   
-  greetMaster() {
-    return `Hello ${this.master}`;
-  }
+//   greetMaster() {
+//     return `Hello ${this.master}`;
+//   }
 }
