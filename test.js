@@ -697,4 +697,46 @@
 //   greetMaster() {
 //     return `Hello ${this.master}`;
 //   }
-}
+//}
+
+
+
+
+// class Student {
+
+//   constructor(){
+//       this.name =  'Lewa'
+//       this.age = 25
+//   }
+// }
+
+
+// class Employee{
+//   constructor(){
+//     this.name =  'employee'
+//     this.age = 0
+//   }
+// }
+
+// Student.prototype.sayHello = function() {
+//   console.log('hello')
+// }
+
+// let employee = new Employee()
+
+// console.log(employee.sayHello())
+
+
+// let st1 = new Student()
+// //console.log(st1)
+
+
+// let str = new String('ooooooooooooooooooooo')
+
+// str.kakabyby = 'ssddff'
+// console.log(str)
+
+
+
+let a = (function(){console.log('tyta')})();
+console.log(a)
